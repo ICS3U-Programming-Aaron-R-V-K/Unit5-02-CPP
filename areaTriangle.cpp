@@ -40,7 +40,7 @@ int main() {
         height = std::stof(heightStr);
 
         // Validate that user input is a positive num
-        if (base <= 0 && height <= 0) {
+        if (base <= 0 || height <= 0) {
             std::cout << "\nError: Base and height must be positive numbers.\n"
                       << std::endl;
 
